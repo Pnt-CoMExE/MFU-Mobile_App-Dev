@@ -38,6 +38,20 @@ class _InputDemoState extends State<InputDemo> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: tcName,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Input your password',
+                suffixIcon: IconButton(
+                  onPressed: tcName.clear,
+                  icon: Icon(Icons.clear),
+                ),
+              ),
+            ),
+          ),
           ElevatedButton(onPressed: updateMessage, child: Text('OK')),
           SizedBox(height: 10),
           Text(message),
