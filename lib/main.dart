@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/week04/basic.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('My First App')),
-        body: Center(child: Text('Hello, World!')),
-        floatingActionButton: FloatingActionButton(
-          onPressed: (null),
-          child: Text('Click'),
-        ),
-      ),
-    ),
-  );
+  runApp(MaterialApp(home: 
+    Basic()
+  ));
 }
