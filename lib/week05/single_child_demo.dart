@@ -8,14 +8,10 @@ class SingleChildDemo extends StatelessWidget {
     return Scaffold(
       // appBar: AppBar(title: Text('My App')),
       body: SafeArea(
-        child: Container(
-          margin: EdgeInsets.all(16),
-          padding: EdgeInsets.all(16),
-          color: Colors.amber,
-          width: 150,
-          height: 100,
-          alignment: Alignment.center,
-          child: Text('Single Child'),
+        //Align is (x,y) -1 to 1
+        child: Align(
+          alignment: Alignment(0.75, -1),
+          child: Text('Single child'),
         ),
       ),
     );
